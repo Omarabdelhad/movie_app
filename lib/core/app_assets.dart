@@ -1,0 +1,29 @@
+class AppAssets {
+  static const String onBoarding1 = 'assets/images/onBoarding1.png';
+  static const String onBoarding2 = 'assets/images/onBoarding2.png';
+  static const String onBoarding3 = 'assets/images/onBoarding3.png';
+  static const String topHome1 = 'assets/images/top_home1.jpg';
+  static const String topHome3 = 'assets/images/top_home3.jpg';
+  static const String category1 = 'assets/images/category1.jpg';
+  static const String category2 = 'assets/images/category2.jpg';
+  static const String category3 = 'assets/images/category3.png';
+  static const String availableNow = 'assets/images/availableNow.png';
+  static const String watchNow = 'assets/images/watchNow.png';
+  static const String avatarBoy1 = 'assets/icons/avatar_boy1.svg';
+  static const String avatarBoy2 = 'assets/icons/avatar_boy2.svg';
+  static const String avatarGirl = 'assets/icons/avatar_girl.svg';
+  static const String explore = 'assets/icons/explore.svg';
+  static const String history = 'assets/icons/history.svg';
+  static const String home = 'assets/icons/home.svg';
+  static const String love = 'assets/icons/love.svg';
+  static const String person = 'assets/icons/person.svg';
+  static const String phone = 'assets/icons/phone.svg';
+  static const String profile = 'assets/icons/Profiel.svg';
+  static const String rate = 'assets/icons/rate.svg';
+  static const String search = 'assets/icons/search.svg';
+  static const String time = 'assets/icons/time.svg';
+  static const String watchList = 'assets/icons/watch_list.svg';
+  static const String userName = 'assets/icons/username.svg';
+  static const String email = 'assets/icons/email.svg';
+  static const String password = 'assets/icons/password.svg';
+}
