@@ -2,6 +2,9 @@ class AppAssets {
   static const String onBoarding1 = 'assets/images/onBoarding1.png';
   static const String onBoarding2 = 'assets/images/onBoarding2.png';
   static const String onBoarding3 = 'assets/images/onBoarding3.png';
+  static const String onBoarding4 = 'assets/images/onBoarding4.png';
+  static const String onBoarding5 = 'assets/images/onBoarding5.png';
+  static const String onBoarding6 = 'assets/images/onBoarding6.jpg';
   static const String topHome1 = 'assets/images/top_home1.jpg';
   static const String topHome3 = 'assets/images/top_home3.jpg';
   static const String category1 = 'assets/images/category1.jpg';
@@ -26,4 +29,5 @@ class AppAssets {
   static const String userName = 'assets/icons/username.svg';
   static const String email = 'assets/icons/email.svg';
   static const String password = 'assets/icons/password.svg';
+  static const String empty = 'assets/images/empty.png';
 }
