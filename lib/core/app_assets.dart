@@ -30,4 +30,5 @@ class AppAssets {
   static const String email = 'assets/icons/email.svg';
   static const String password = 'assets/icons/password.svg';
   static const String empty = 'assets/images/empty.png';
+  static const String avatar = 'assets/images/avatar.png';
 }

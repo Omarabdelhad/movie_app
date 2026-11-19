@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:movie_app/core/app_routes.dart';
 import 'package:movie_app/core/app_theme.dart';
 import 'package:movie_app/screens/home/home_screen.dart';
+import 'package:movie_app/screens/home/tabs/profile_tab/widgets/update_profile.dart/update_profile_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,8 +20,15 @@ class MyApp extends StatelessWidget {
       builder: (context, child) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          home: const HomeScreen(),
           theme: AppTheme.lightTheme,
+          initialRoute: AppRoutes.home,
+          routes: {
+            
+            AppRoutes.home: (context)=>const HomeScreen(),
+            AppRoutes.updateProfile:(context)=> const UpdateProfileScreen()
+            }
+            
+          
         );
       },
     );

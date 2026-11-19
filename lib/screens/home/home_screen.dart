@@ -5,7 +5,7 @@ import 'package:movie_app/core/app_assets.dart';
 import 'package:movie_app/core/app_colors.dart';
 import 'package:movie_app/screens/home/tabs/explore_tab/explore_tab.dart';
 import 'package:movie_app/screens/home/tabs/home_tab/home_tab.dart';
-import 'package:movie_app/screens/home/tabs/profile_tab.dart';
+import 'package:movie_app/screens/home/tabs/profile_tab/profile_tab.dart';
 import 'package:movie_app/screens/home/tabs/search_tab/search_tab.dart';
 
 class HomeScreen extends StatefulWidget {
