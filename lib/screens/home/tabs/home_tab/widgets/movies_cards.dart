@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:movie_app/core/app_assets.dart';
 import 'package:movie_app/core/app_colors.dart';
-import 'package:movie_app/screens/home/tabs/home/models/movie_model.dart';
+import 'package:movie_app/screens/home/tabs/home_tab/models/movie_model.dart';
 
 class MoviesCards extends StatelessWidget {
   final MovieModel movie;

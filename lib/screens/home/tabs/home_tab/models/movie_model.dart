@@ -9,6 +9,11 @@ class MovieModel {
     MovieModel(image: AppAssets.topHome1, rating: 7.7),
     MovieModel(image: AppAssets.onBoarding6, rating: 7.7),
     MovieModel(image: AppAssets.topHome3, rating: 7.7),
-    
+    MovieModel(image: AppAssets.topHome1, rating: 7.7),
+    MovieModel(image: AppAssets.onBoarding6, rating: 7.7),
+    MovieModel(image: AppAssets.topHome3, rating: 7.7),
+    MovieModel(image: AppAssets.topHome1, rating: 7.7),
+    MovieModel(image: AppAssets.onBoarding6, rating: 7.7),
+    MovieModel(image: AppAssets.topHome3, rating: 7.7),
   ];
 }

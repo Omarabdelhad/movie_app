@@ -3,10 +3,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:movie_app/core/app_assets.dart';
 import 'package:movie_app/core/app_colors.dart';
-import 'package:movie_app/screens/home/tabs/explore_tab.dart';
-import 'package:movie_app/screens/home/tabs/home/home_tab.dart';
+import 'package:movie_app/screens/home/tabs/explore_tab/explore_tab.dart';
+import 'package:movie_app/screens/home/tabs/home_tab/home_tab.dart';
 import 'package:movie_app/screens/home/tabs/profile_tab.dart';
-import 'package:movie_app/screens/home/tabs/search_tab.dart';
+import 'package:movie_app/screens/home/tabs/search_tab/search_tab.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
