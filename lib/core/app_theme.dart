@@ -10,9 +10,8 @@ abstract class AppTheme {
       titleTextStyle: TextStyle(
         fontSize: 16.sp,
         fontWeight: FontWeight.w400,
-        color: AppColors.yellowColor
+        color: AppColors.yellowColor,
       ),
-      
     ),
     textTheme: TextTheme(
       bodyMedium: TextStyle(
@@ -39,14 +38,13 @@ abstract class AppTheme {
         color: AppColors.whiteColor,
         fontWeight: FontWeight.w400,
         fontSize: 16.sp,
-
       ),
       displaySmall: TextStyle(
         color: AppColors.yellowColor,
         fontWeight: FontWeight.w400,
         fontSize: 14.sp,
       ),
-      labelSmall:  TextStyle(
+      labelSmall: TextStyle(
         color: AppColors.greyColor,
         fontWeight: FontWeight.w400,
         fontSize: 20.sp,
@@ -57,5 +55,13 @@ abstract class AppTheme {
         fontSize: 20.sp,
       ),
     ),
+    colorScheme: ColorScheme.light(
+      primary: AppColors.yellowColor,
+      secondary: AppColors.blackColor,
+      tertiary: AppColors.whiteColor,
+      onPrimaryContainer: AppColors.greyColor,
+      onSecondaryContainer: AppColors.redColor,
+    ),
+    scaffoldBackgroundColor: AppColors.blackColor,
   );
-    }
+}
