@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:movie_app/core/app_routes.dart';
 import 'package:movie_app/core/app_theme.dart';
 import 'package:movie_app/screens/home/home_screen.dart';
+import 'package:movie_app/screens/home/movie_details/movie_details.dart';
 import 'package:movie_app/screens/home/tabs/profile_tab/widgets/update_profile.dart/update_profile_screen.dart';
 
 void main() {
@@ -25,7 +26,8 @@ class MyApp extends StatelessWidget {
           routes: {
             
             AppRoutes.home: (context)=>const HomeScreen(),
-            AppRoutes.updateProfile:(context)=> const UpdateProfileScreen()
+            AppRoutes.updateProfile:(context)=> const UpdateProfileScreen(),
+            AppRoutes.movieDetails:(context)=> const MovieDetails()
             }
             
           
