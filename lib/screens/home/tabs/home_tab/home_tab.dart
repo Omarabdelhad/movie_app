@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:movie_app/core/app_assets.dart';
 import 'package:movie_app/core/app_colors.dart';
+import 'package:movie_app/core/app_routes.dart';
 import 'package:movie_app/screens/home/tabs/home_tab/models/movie_model.dart';
 import 'package:movie_app/screens/home/tabs/home_tab/widgets/movies_cards.dart';
 
@@ -22,32 +23,62 @@ class _HomeTabState extends State<HomeTab> {
     return SingleChildScrollView(
       child: Column(
         children: [
-          Container(
+          SizedBox(
             height: MediaQuery.of(context).size.height * 0.7,
             width: double.infinity,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage(AppAssets.onBoarding6),
-                fit: .cover,
-              ),
-            ),
+
             child: Stack(
               children: [
+                Positioned(
+                  child: AnimatedSwitcher(
+                    duration: const Duration(milliseconds: 300),
+                    child: Image.asset(
+                      movies[currentIndexPage].image,
+                      key: ValueKey(currentIndexPage),
+                      fit: BoxFit.cover,
+                      width: double.infinity,
+                      height: double.infinity,
+                    ),
+                  ),
+                ),
+
+                Positioned.fill(
+                  child: DecoratedBox(
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        end: Alignment.bottomCenter,
+                        colors: [
+                          AppColors.blackColor.withValues(alpha: 0.6),
+                          AppColors.blackColor,
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+
                 Align(
                   alignment: Alignment.topCenter,
 
-                  child: Container(child: Image.asset(AppAssets.availableNow)),
+                  child: Image.asset(AppAssets.availableNow),
                 ),
                 Align(
                   alignment: Alignment.center,
                   child: CarouselSlider.builder(
                     itemBuilder: (context, index, realIndex) {
-                      return MoviesCards(movie: movies[index]);
+                      return MoviesCards(
+                        movie: movies[index],
+                        onTap: () {
+                          Navigator.of(
+                            context,
+                          ).pushNamed(AppRoutes.movieDetails);
+                        },
+                      );
                     },
                     options: CarouselOptions(
                       height: 351.h,
                       viewportFraction: 0.55,
                       enlargeCenterPage: true,
+                      
                       enlargeFactor: .3,
                       onPageChanged: (index, reason) {
                         setState(() {
@@ -100,7 +131,15 @@ class _HomeTabState extends State<HomeTab> {
               itemBuilder: (context, index) {
                 return SizedBox(
                   width: 190.w,
-                  child: MoviesCards(movie: movies[index]),
+                  child: MoviesCards(
+                    movie: movies[index],
+                    onTap: () {
+                      Navigator.of(context).pushNamed(
+                        AppRoutes.movieDetails,
+                        arguments: movies[index],
+                      );
+                    },
+                  ),
                 );
               },
               separatorBuilder: (BuildContext context, int index) {

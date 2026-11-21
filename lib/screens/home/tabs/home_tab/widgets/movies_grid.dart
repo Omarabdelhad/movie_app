@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:movie_app/core/app_routes.dart';
 import 'package:movie_app/screens/home/tabs/home_tab/models/movie_model.dart';
 import 'package:movie_app/screens/home/tabs/home_tab/widgets/movies_cards.dart';
 
@@ -18,7 +19,14 @@ class MoviesGrid extends StatelessWidget {
         childAspectRatio: .7,
       ),
       itemBuilder: (context, index) {
-        return MoviesCards(movie: movies[index]);
+        return MoviesCards(
+          movie: movies[index],
+          onTap: () {
+            Navigator.of(
+              context,
+            ).pushNamed(AppRoutes.movieDetails, arguments: movies[index]);
+          },
+        );
       },
     );
   }
