@@ -43,7 +43,7 @@ class _ExploreTabState extends State<ExploreTab> {
                           decoration: BoxDecoration(
                             color: isSelected
                                 ? AppColors.yellowColor
-                                : AppColors.greyColor,
+                                : AppColors.blackColor,
                             border: Border.all(
                               color: AppColors.yellowColor,
                               width: 2,

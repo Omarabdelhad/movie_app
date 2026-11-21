@@ -11,8 +11,12 @@ class UpdateProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
-        leading: Icon(Icons.arrow_back, color: AppColors.yellowColor),
+        leading: GestureDetector(
+          onTap: () => Navigator.pop(context),
+          child: Icon(Icons.arrow_back, color: AppColors.yellowColor),
+        ),
         title: Text(
           'Pick Avatar',
           style: Theme.of(context).textTheme.bodyLarge,
@@ -45,13 +49,15 @@ class UpdateProfileScreen extends StatelessWidget {
             PrimaryButton(
               backgroundColor: AppColors.redColor,
               textColor: AppColors.whiteColor,
-              text: 'Delete Account', onPressed: () {  },
+              text: 'Delete Account',
+              onPressed: () {},
             ),
             SizedBox(height: 19.h),
             PrimaryButton(
               backgroundColor: AppColors.yellowColor,
               textColor: AppColors.blackColor,
-              text: 'Update Data', onPressed: () {  },
+              text: 'Update Data',
+              onPressed: () {},
             ),
           ],
         ),
