@@ -4,6 +4,7 @@ import 'package:movie_app/core/app_colors.dart';
 
 abstract class AppTheme {
   static ThemeData lightTheme = ThemeData(
+    scaffoldBackgroundColor: AppColors.blackColor,
     appBarTheme: AppBarThemeData(
       backgroundColor: Colors.transparent,
       centerTitle: true,
