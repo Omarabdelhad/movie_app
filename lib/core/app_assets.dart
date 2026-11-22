@@ -26,4 +26,19 @@ class AppAssets {
   static const String userName = 'assets/icons/username.svg';
   static const String email = 'assets/icons/email.svg';
   static const String password = 'assets/icons/password.svg';
+  static const String visibleOff = 'assets/icons/eye-visible-off.svg';
+  static const String visibleOn = 'assets/icons/eye-visible-on.svg';
+  static const String google = 'assets/icons/google_.svg';
+  static const String eg = 'assets/icons/EG.svg';
+  static const String lr = 'assets/icons/LR.svg';
+  static const String avatar1 = 'assets/images/0ecb0264ed6bae405d7a1f06d2b702842000ca23.png';
+  static const String avatar2 = 'assets/images/8ada4b5e9db6fa638fd610ae56566f29347fa6cc.png';
+  static const String avatar3 = 'assets/images/9efa2883c85d008343fb6de73f1c7d828598c10b.png';
+  static const String avatar4 = 'assets/images/76e0002b86723433e7e92b593252d92865c77fe2.png';
+  static const String avatar5 = 'assets/images/1781d833130f2d6e86fdf74b18fe8f84e378b3a2.png';
+  static const String avatar6 = 'assets/images/9634d5f2c8b153c8df68558ef338ba799147bc12.png';
+  static const String avatar7 = 'assets/images/26200766c8c2f003179d12c5221ee05a7b84c7ef.png';
+  static const String avatar8 = 'assets/images/72248670caa99b64a8fe19db3b62d70ebc10f1dc.png';
+  static const String avatar9 = 'assets/images/avataaaar.png';
+  static const String arrow_back = 'assets/icons/arrow_back.svg';
 }
