@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:movie_app/core/app_routes.dart';
 import 'package:movie_app/core/app_theme.dart';
+import 'package:movie_app/screens/auth/login/login_screen.dart';
 import 'package:movie_app/screens/auth/register/register_screen.dart';
 
 
@@ -24,8 +25,9 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         routes: {
           AppRoutes.register:(context)=>RegisterScreen(),
+          AppRoutes.login:(context)=>LoginScreen()
         },
-        initialRoute: AppRoutes.register,
+        initialRoute: AppRoutes.login,
       )
     );
   }

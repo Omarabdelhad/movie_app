@@ -41,4 +41,5 @@ class AppAssets {
   static const String avatar8 = 'assets/images/72248670caa99b64a8fe19db3b62d70ebc10f1dc.png';
   static const String avatar9 = 'assets/images/avataaaar.png';
   static const String arrow_back = 'assets/icons/arrow_back.svg';
+  static const String watch0 = 'assets/images/watch0.png';
 }
