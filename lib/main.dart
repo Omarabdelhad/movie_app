@@ -4,6 +4,9 @@ import 'package:movie_app/core/app_routes.dart';
 import 'package:movie_app/core/app_theme.dart';
 import 'package:movie_app/screens/auth/forget_pass/forget_pass_screen.dart';
 import 'package:movie_app/screens/auth/login/login_screen.dart';
+import 'package:movie_app/screens/auth/forget_pass/forget_pass_screen.dart';
+import 'package:movie_app/screens/auth/login/login_screen.dart';
+import 'package:movie_app/screens/auth/login/login_screen.dart';
 import 'package:movie_app/screens/auth/register/register_screen.dart';
 
 
@@ -29,7 +32,7 @@ class MyApp extends StatelessWidget {
           AppRoutes.login:(context)=>LoginScreen(),
           AppRoutes.forget:(context)=>ForgetPassScreen(),
         },
-        initialRoute: AppRoutes.forget,
+        initialRoute: AppRoutes.login,
       )
     );
   }
