@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:movie_app/core/app_assets.dart';
+import 'package:movie_app/core/app_routes.dart';
 import 'package:movie_app/core/custom_container.dart';
 
 import '../../../core/app_colors.dart';
@@ -41,7 +42,9 @@ class _FotgetPassScreenState extends State<ForgetPassScreen> {
         leading: Padding(
           padding:  EdgeInsets.only(left: 34.h),
           child: IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pop(context);
+            },
             icon: Icon(Icons.arrow_back, color: AppColors.yellowColor),
           ),
         ),
@@ -72,7 +75,9 @@ class _FotgetPassScreenState extends State<ForgetPassScreen> {
               }, keyboardType: .emailAddress,
             ),
             SizedBox(height: 24.h,),
-            CustomContainer(text: "Verify Email", iconPath: "")
+            CustomContainer(text: "Verify Email", iconPath: "",onClick: () {
+
+            },)
 
           ],
         ),

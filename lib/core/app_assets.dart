@@ -43,4 +43,7 @@ class AppAssets {
   static const String arrow_back = 'assets/icons/arrow_back.svg';
   static const String watch0 = 'assets/images/watch0.png';
   static const String forgetPass = 'assets/images/forget_pass.png';
+  static const String onBoarding5 = 'assets/images/onBoarding5.png';
+  static const String watchMovie = 'assets/images/watchmovie.png';
+  static const String screenShot1 = 'assets/images/screenShot1.jpg';
 }

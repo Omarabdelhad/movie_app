@@ -39,86 +39,83 @@ class _CustomTextFilledState extends State<CustomTextFilled> {
   bool visibleOff = true;
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height:55.72.h ,
-      child: TextFormField(
-        textAlignVertical: TextAlignVertical.center,
-        style: TextStyle(color: Colors.white,fontSize: 20.sp,fontWeight: .w400),
-        validator: widget.validation,
-        controller: widget.controller,
-        decoration: InputDecoration(
-          contentPadding: EdgeInsets.symmetric(
-            vertical: 0,
-            horizontal: 16.w,
-          ),
-          prefixIconConstraints: BoxConstraints(
-            minWidth: 48.w,
-            minHeight: 55.72.h,
-          ),
-
-          suffixIconConstraints: BoxConstraints(
-            minWidth: 48.w,
-            minHeight: 55.72.h,
-          ),
-          filled: true,
-          errorStyle: TextStyle(color: Colors.red),
-          fillColor: AppColors.greyColor,
-          enabledBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(16.r),
-          ),
-          focusedBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(16.r),
-          ),
-          errorBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(16.r),
-            borderSide: BorderSide(color: Colors.red),
-          ),
-          focusedErrorBorder:OutlineInputBorder(
-            borderRadius: BorderRadius.circular(16.r),
-            borderSide: BorderSide(color: Colors.red),
-          ) ,
-          hintText: widget.hintText,
-          hintStyle: Theme.of(context).textTheme.bodySmall,
-          prefixIcon: Padding(
-            padding:  EdgeInsets.only(left: widget.paddingLeft.w,right: widget.paddingRight.w  ),
-            child: SvgPicture.asset( widget.iconPrefixPath,
-              width: widget.iconSizeWidth.w,
-              height: widget.iconSizeHeight.h,
-            ),
-          ),
-          suffixIcon: widget.isPassword
-              ?
-          IconButton(
-            constraints: BoxConstraints(
-              minWidth: 48.w,
-              minHeight: 55.72.h,
-            ),
-            padding: EdgeInsets.zero,
-            onPressed: () {
-              setState(() {
-                visibleOff = !visibleOff;
-              });
-            },
-            icon: Padding(
-              padding:  EdgeInsets.only(right: 16.w, top: 8.h, bottom: 8.h),
-              child: SvgPicture.asset(
-                visibleOff?AppAssets.visibleOff
-                    :AppAssets.visibleOn,
-                height: 24.h,
-                width: 24.w,
-                colorFilter: .mode(Colors.white,.srcIn),
-              ),
-            ),
-          )
-              : null,
+    return TextFormField(
+      textAlignVertical: TextAlignVertical.center,
+      style: TextStyle(color: Colors.white,fontSize: 20.sp,fontWeight: .w400),
+      validator: widget.validation,
+      controller: widget.controller,
+      decoration: InputDecoration(
+        contentPadding: EdgeInsets.symmetric(
+          vertical: 0,
+          horizontal: 16.w,
         ),
-        keyboardType: widget.keyboardType,
-        obscureText: widget.isPassword? visibleOff:false,
-        onTapOutside: (event) {
-          Duration(milliseconds: 2);
-          FocusScope.of(context).unfocus();
-        },
+        prefixIconConstraints: BoxConstraints(
+          minWidth: 48.w,
+          minHeight: 55.72.h,
+        ),
+
+        suffixIconConstraints: BoxConstraints(
+          minWidth: 48.w,
+          minHeight: 55.72.h,
+        ),
+        filled: true,
+        errorStyle: TextStyle(color: Colors.red),
+        fillColor: AppColors.greyColor,
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(16.r),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(16.r),
+        ),
+        errorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(16.r),
+          borderSide: BorderSide(color: Colors.red),
+        ),
+        focusedErrorBorder:OutlineInputBorder(
+          borderRadius: BorderRadius.circular(16.r),
+          borderSide: BorderSide(color: Colors.red),
+        ) ,
+        hintText: widget.hintText,
+        hintStyle: Theme.of(context).textTheme.bodySmall,
+        prefixIcon: Padding(
+          padding:  EdgeInsets.only(left: widget.paddingLeft.w,right: widget.paddingRight.w  ),
+          child: SvgPicture.asset( widget.iconPrefixPath,
+            width: widget.iconSizeWidth.w,
+            height: widget.iconSizeHeight.h,
+          ),
+        ),
+        suffixIcon: widget.isPassword
+            ?
+        IconButton(
+          constraints: BoxConstraints(
+            minWidth: 48.w,
+            minHeight: 55.72.h,
+          ),
+          padding: EdgeInsets.zero,
+          onPressed: () {
+            setState(() {
+              visibleOff = !visibleOff;
+            });
+          },
+          icon: Padding(
+            padding:  EdgeInsets.only(right: 16.w, top: 8.h, bottom: 8.h),
+            child: SvgPicture.asset(
+              visibleOff?AppAssets.visibleOff
+                  :AppAssets.visibleOn,
+              height: 24.h,
+              width: 24.w,
+              colorFilter: .mode(Colors.white,.srcIn),
+            ),
+          ),
+        )
+            : null,
       ),
+      keyboardType: widget.keyboardType,
+      obscureText: widget.isPassword? visibleOff:false,
+      onTapOutside: (event) {
+        Duration(milliseconds: 2);
+        FocusScope.of(context).unfocus();
+      },
     );
   }
 }

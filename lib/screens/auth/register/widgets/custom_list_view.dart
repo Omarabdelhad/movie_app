@@ -52,7 +52,10 @@ class _CustomListViewState extends State<CustomListView> {
             setState(() {
               currentIndex = index;
             });
+            print(currentIndex);
           },
+          autoPlay: true,
+          autoPlayInterval: Duration(seconds: 2)
         ),
       ),
     );

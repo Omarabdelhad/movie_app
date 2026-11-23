@@ -4,10 +4,8 @@ import 'package:movie_app/core/app_routes.dart';
 import 'package:movie_app/core/app_theme.dart';
 import 'package:movie_app/screens/auth/forget_pass/forget_pass_screen.dart';
 import 'package:movie_app/screens/auth/login/login_screen.dart';
-import 'package:movie_app/screens/auth/forget_pass/forget_pass_screen.dart';
-import 'package:movie_app/screens/auth/login/login_screen.dart';
-import 'package:movie_app/screens/auth/login/login_screen.dart';
 import 'package:movie_app/screens/auth/register/register_screen.dart';
+import 'package:movie_app/screens/movie_deatails/movie_details_screen.dart';
 
 
 void main() {
@@ -31,6 +29,7 @@ class MyApp extends StatelessWidget {
           AppRoutes.register:(context)=>RegisterScreen(),
           AppRoutes.login:(context)=>LoginScreen(),
           AppRoutes.forget:(context)=>ForgetPassScreen(),
+          AppRoutes.details:(context)=>MovieDetailsScreen(),
         },
         initialRoute: AppRoutes.login,
       )
