@@ -4,14 +4,16 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:movie_app/screens/auth/register/widgets/list_avatar.dart';
 
 class CustomListView extends StatefulWidget {
-  CustomListView({super.key});
+  CustomListView({super.key,required this.onSelected});
+   final ValueChanged<int> onSelected;
 
-  @override
+@override
   State<CustomListView> createState() => _CustomListViewState();
 }
 
 class _CustomListViewState extends State<CustomListView> {
   int currentIndex = 0;
+  late int avatarIndex;
 
   late CarouselSliderController carouselSlider;
 
@@ -33,6 +35,10 @@ class _CustomListViewState extends State<CustomListView> {
           bool isCenter = index == currentIndex;
           return GestureDetector(
             onTap: () {
+              setState(() {
+                avatarIndex=index;
+              });
+              widget.onSelected(index);
               carouselSlider.animateToPage(index);
               print(index);
             },
@@ -54,8 +60,6 @@ class _CustomListViewState extends State<CustomListView> {
             });
             print(currentIndex);
           },
-          autoPlay: true,
-          autoPlayInterval: Duration(seconds: 2)
         ),
       ),
     );

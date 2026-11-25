@@ -5,4 +5,5 @@ class AppRoutes {
   static const String onBoarding = '/onBoarding';
   static const String forget = '/forget';
   static const String details = '/details';
+  static const String testHome = '/testHome';
 }
